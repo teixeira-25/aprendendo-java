@@ -1,8 +1,8 @@
 public class Caneta
 {
-    private String cor;
+    String cor;
     String marca;
-    static boolean tampa = true;
+    boolean tampa = true;
     public void escrever(String b)
     {
         if (tampa==false)
@@ -18,18 +18,18 @@ public class Caneta
     {
         if (tampa==true)
         {
-            System.out.println("Tampado");
+            System.out.println("Caneta tampada");
         } else
         {
-            System.out.println("Destampado");
+            System.out.println("Caneta destampada");
         }
     }
-    public void estadoDaTampa(String a)
+    public void estadoDaTampa(short a)
     {
-        if (a=="Destampar")
+        if (a==2)
         {
             tampa = false;
-        } else if (a=="Tampar")
+        } else if (a==1)
         {
             tampa = true;
         }
