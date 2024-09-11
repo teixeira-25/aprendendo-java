@@ -18,7 +18,6 @@ public class Caneta
     {
         this.marca = marca;
     }
-
     public boolean tampa = true;
     public boolean isTampa() {
         return tampa;
@@ -26,7 +25,6 @@ public class Caneta
     public void setTampa(boolean tampa) {
         this.tampa = tampa;
     }
-
     public void estadoDaTampa()
     {
         if (tampa==true)
@@ -58,13 +56,13 @@ public class Caneta
             tampa = true;
         }
     }
-    public Caneta(boolean tampa, String cor, String marca)
+    public Caneta(boolean tampa, String cor, String marca) //Construtor com parâmetros
     {
         this.setTampa(tampa);
         this.setCor(cor);
         this.setMarca(marca);
     }
-    public Caneta()
+    public Caneta() //Construtor sem parâmetros
     {
         this.setTampa(true);
         this.setCor("Azul");
